@@ -5,20 +5,20 @@
 class Islectl < Formula
   desc ""
   homepage "https://github.com/islandora-devops/islectl"
-  version "0.2.1"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Islandora-Devops/islectl/releases/download/0.2.1/islectl_Darwin_x86_64.tar.gz"
-      sha256 "eb4ccca6ce6978a3baec0c5b35ec3a43445527c04927c4bddcdedfd869dc8154"
+      url "https://github.com/Islandora-Devops/islectl/releases/download/0.3.0/islectl_Darwin_x86_64.tar.gz"
+      sha256 "624e0a0b21f21a936f3c747b1db173005ecaf4ed185f6d654d201e374adeacbb"
 
       def install
         bin.install "islectl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Islandora-Devops/islectl/releases/download/0.2.1/islectl_Darwin_arm64.tar.gz"
-      sha256 "5f15ab1a0337a754ac12357491e9c6e6db87430566de54484401a52dc0782c37"
+      url "https://github.com/Islandora-Devops/islectl/releases/download/0.3.0/islectl_Darwin_arm64.tar.gz"
+      sha256 "738d79612b0bf759b0de044f656266ab51e6a3d17104884dfa1839156f5d8b83"
 
       def install
         bin.install "islectl"
@@ -29,8 +29,8 @@ class Islectl < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Islandora-Devops/islectl/releases/download/0.2.1/islectl_Linux_x86_64.tar.gz"
-        sha256 "cdaf19fab17dab0aff6ac62bea8c0c0252a077e830f333968414f9d178849efa"
+        url "https://github.com/Islandora-Devops/islectl/releases/download/0.3.0/islectl_Linux_x86_64.tar.gz"
+        sha256 "d2cdfec583401839eb6eed72e41571dc1e052f7cb9785e5307efdafe6c9ed016"
 
         def install
           bin.install "islectl"
@@ -39,8 +39,8 @@ class Islectl < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Islandora-Devops/islectl/releases/download/0.2.1/islectl_Linux_arm64.tar.gz"
-        sha256 "ee0d88aba2cf909ef10ed0d1a3a4a693078cc6e686dcfdd3c35935027b8431d9"
+        url "https://github.com/Islandora-Devops/islectl/releases/download/0.3.0/islectl_Linux_arm64.tar.gz"
+        sha256 "42bced7f54772b46280c8ace89900387ec6b8e76ce7a70e4232de39415fd3206"
 
         def install
           bin.install "islectl"
